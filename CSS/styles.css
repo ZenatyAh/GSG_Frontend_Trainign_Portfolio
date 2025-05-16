@@ -533,3 +533,90 @@ nav ul .logo{
     }
   }
   
+  /* About us */
+  /* about.css */
+.about-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  animation: slideIn 1.2s ease-in-out;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin-top: 10px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #ddd;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-thanks {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #aaa;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-signature {
+  margin-top: 10px;
+  text-align: right;
+  font-style: italic;
+  font-size: 1rem;
+  color: #999;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
