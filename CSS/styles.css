@@ -211,6 +211,7 @@ nav ul .logo{
     font-size: 4rem;
     font-weight: 600;
     min-width: 280px;
+    text-align: center;
 }
 
 
@@ -322,12 +323,18 @@ nav ul .logo{
   
   .skills-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+ .skills-grid-1 {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 30px;
     max-width: 1000px;
     margin: auto;
   }
-  
   .skill-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
