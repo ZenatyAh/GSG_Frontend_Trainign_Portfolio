@@ -24,7 +24,7 @@ nav{
     z-index: 3;
     background-color: rgba(0, 0, 0, 9)
 }
-nav ul {
+nav .navLinks {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -41,17 +41,22 @@ nav li a {
      color: white;
      font-weight: bold;
 }
+nav li a:hover{
+  transform: scale(1.2);
+    color: #ccc;
+}
 .high{
     color: black;
     background: #B3AA91;
     padding: 2px 5px;
 }
-nav ul .logo{
+nav .navLinks .logo{
     width: 20px;
     height: 20px;
     border: 1px solid white;
     border-radius: 50%;
 }
+
 
 /* Image Background */
 .bg{

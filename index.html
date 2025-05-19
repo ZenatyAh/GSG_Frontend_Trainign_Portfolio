@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./CSS/styles.css">
     <!-- Font Awesome CSS (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+  </head>
 <body class="loading">
     <div class="bg"></div>
     <nav>
-        <ul>
+        <ul class="navLinks">
             <li><div class="logo"></div></li>
             <li><a class="high" href="#START">START</a></li>
             <li><a href="#WHO">WHO</a></li>            
@@ -25,7 +25,7 @@
         <div class="animated-text">
             I'M THE <span></span>
         </div>
-        <p>“Explore “A Human But From Gaza,“ an essential collection merging intimate diaries and powerful artwork. Witness firsthand the pain, resilience, and enduring hope of Gazans living through the war in Gaza. Amplify their authentic voices and stand in solidarity—order your copy today to support our mission.“
+        <p>“I can't recall how many times during this genocide I thought I wouldn't survive — that death was ready to take my soul to the afterlife. Yet, I’m still here, alive — for now, at least. As long as this genocide continues, no one knows what tomorrow holds.“
         </p>
     </main>
     <div class="header-wrp">
@@ -178,7 +178,6 @@
             <li><a href="#WHY">WHY</a></li>
             <li><a href="#BE_FRIENDS">BE FRIENDS</a></li>
       </ul>
-  
       <div class="footer-social">
         <a target="_blank" href="https://x.com/zenaty_ah"><i class="fa-brands fa-x"></i></a>
         <a target="_blank" href="https://github.com/ZenatyAh" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -189,6 +188,14 @@
       <p>&copy; 2025 Ahmed. All Rights Reserved.</p>
     </div>
   </footer>
+  <script defer>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
   
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
+
 </html>
